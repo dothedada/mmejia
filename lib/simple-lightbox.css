@@ -1,0 +1,103 @@
+.sl-overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba( 255, 255, 255, 0.95);
+	display: none;
+	z-index: 1035;
+}
+.sl-wrapper {
+	z-index: 1040;
+}
+.sl-wrapper * {
+	box-sizing: border-box;
+}
+.sl-wrapper button {
+	cursor: pointer;
+	border: none;
+	color: #bc2429;
+	background:transparent;
+}
+.sl-wrapper button:hover {
+	text-decoration: underline;
+}
+.sl-wrapper .sl-close {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	z-index: 10060;
+	font-size: 3rem;
+}
+.sl-wrapper .sl-close:focus {
+	outline: none;
+}
+.sl-wrapper .sl-counter {
+	position: fixed;
+	display: block;
+	top: 1.4rem;
+	left: 40%;
+	right: 40%;
+	z-index: 1060;
+	color: #666;
+	font-size: 0.8rem;
+	font-weight: 300;
+	text-align: center;
+}
+.sl-wrapper .sl-navigation {
+	width: 100%;
+	display: none;
+}
+.sl-wrapper .sl-navigation button {
+	position: fixed;
+	top: 50%;
+	height: 6rem;
+	margin-top: -3rem;
+	width: 2rem;
+	line-height: 3rem;
+	text-align: center;
+	display: block;
+	z-index: 10060;
+	color: #bc2429;
+	background: transparent;
+}
+.sl-wrapper .sl-navigation button.sl-next {
+	right: 0px;
+	font-size: 3rem;
+}
+.sl-wrapper .sl-navigation button.sl-prev {
+	left: 0px;
+	font-size: 3rem;
+}
+.sl-wrapper .sl-navigation button:focus {
+	outline: none;
+}
+.sl-wrapper.sl-dir-rtl .sl-navigation {
+	direction: ltr;
+}	
+.sl-wrapper .sl-image {
+	position: fixed;
+	-ms-touch-action: none;
+	touch-action: none;
+	z-index: 10000;
+}
+.sl-wrapper .sl-image img {
+	margin: 0;
+	padding: 0;
+	display: block;
+	border: 0 none;
+	width: 100%;
+	height: auto;
+}
+.sl-wrapper .sl-image .sl-caption {
+	display: none;
+	font-size: 1rem;
+	font-weight: 200;
+	margin: 0.2rem 0;
+}
+
+
