@@ -1,0 +1,45 @@
+@use '../abstracts/_variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+html {
+	font-family: 'Inter', sans-serif;
+	font-size: 100%;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: $frente;
+	max-width: 15ch;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.6rem;
+	font-weight: 400;
+	color: $frente;
+}
+
+em {
+	font-weight: 700;
+}
+a {
+	text-decoration: none;
+	color: $resaltado;
+	font-weight: 500;
+	text-decoration: underline;
+}
+a:hover {
+	color: $resaltado2;
+}
+.separador::before {
+	content: "· ";
+	color: #2a2a23;
+}
+
+.active,
+.active:hover {
+	cursor: default;
+	text-decoration: none;
+	border-bottom: 8px solid #bc2429;
+}
